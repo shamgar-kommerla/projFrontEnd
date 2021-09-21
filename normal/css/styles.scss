@@ -1,0 +1,246 @@
+$colors: (
+  headerbg: #001219,
+);
+
+@function color($colorName) {
+  @return map-get($colors, $colorName);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 150vh;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+nav {
+  position: sticky;
+  top: 0;
+  color: #000;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(241, 239, 239);
+  .nav-1 {
+    width: 70%;
+    margin: 1rem auto 0;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      letter-spacing: 2px;
+    }
+    .buttons {
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-end;
+      li {
+        padding: 0.5rem;
+        a {
+          text-decoration: none;
+          color: #fff;
+          padding: 0.5rem 1rem;
+          background-color: #001219;
+          margin: 0 1rem;
+        }
+      }
+    }
+  }
+  .nav-2 {
+    width: 70%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    .set-1 {
+      // flex: 0.6;
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-start;
+      li {
+        padding: 0.5rem;
+        margin-right: 2rem;
+        a {
+          color: #000;
+        }
+      }
+    }
+    .set-2 {
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-start;
+      li {
+        padding: 0.5rem;
+        margin-right: 0.2rem;
+        a {
+          color: #000;
+        }
+      }
+    }
+    // border-bottom: 1px solid #0012195b;
+  }
+}
+.container {
+  min-height: 50vh;
+  background-color: #f1f1f1;
+}
+
+/*******************
+header {
+  color: #fff;
+  background: linear-gradient(to top, rgba(20, 20, 20, 0.6)),
+    url('../img/005.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .buttons {
+    color: #fff;
+    a {
+      text-decoration: none;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      background-color: #001219;
+      margin: 0 1rem;
+    }
+  }
+}
+
+************************/
+
+.article-container {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+}
+.articles {
+  // flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  .heading {
+    h2 {
+      margin-bottom: 1rem;
+      display: inline-block;
+      border-bottom: 2px solid #000;
+    }
+  }
+  .article-card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    height: 150px;
+    .article-main {
+      padding: 0.5rem;
+      flex: 0.7;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .article-img {
+      flex: 0.2;
+      height: 150px;
+      background-color: grey;
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  .article-card:hover {
+    box-shadow: 0px 0px 5px 1px #00121952;
+  }
+  .more {
+    a {
+      color: #fff;
+      background-color: #001219;
+      text-decoration: none;
+      padding: 0.7rem 2rem;
+    }
+  }
+}
+
+.most-viewed {
+  display: flex;
+  flex-direction: column;
+  .heading {
+    h2 {
+      margin-bottom: 1rem;
+      display: inline-block;
+      border-bottom: 2px solid #000;
+    }
+  }
+  width: 70%;
+  margin: 1rem auto;
+  .most-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    .most-card {
+      width: 250px;
+      background-color: orange;
+      height: 250px;
+      margin: 0.5rem;
+    }
+  }
+  .more {
+    a {
+      color: #fff;
+      background-color: #001219;
+      text-decoration: none;
+      padding: 0.7rem 2rem;
+    }
+  }
+}
+
+.user-details {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  .container {
+    background-color: #fff;
+    width: 70%;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+    .img-div {
+      flex: 0.3;
+      img {
+        width: 200px;
+        display: block;
+        margin: auto;
+        border-radius: 2px;
+      }
+    }
+    .user-content {
+      flex: 0.7;
+      p {
+        font-weight: bold;
+        span {
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+footer {
+  clip-path: polygon(0 7%, 100% 0, 100% 100%, 0% 100%);
+  min-height: 30vh;
+  background-color: #001219;
+}
