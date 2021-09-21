@@ -1,0 +1,87 @@
+$colors: (
+  pr1: #003049,
+  pr2: #d62828,
+  pr3: #f77f00,
+  pr4: #03071e,
+  sec1: #e8e8e4,
+  sec2: #d8e2dc,
+  sec3: #f8edeb,
+  headerbg: #001219,
+);
+
+@function color($colorName) {
+  @return map-get($colors, $colorName);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+//   font-family: 'Montserrat', sans-serif;
+// font-family: 'Poppins', sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+li {
+  list-style-type: none;
+}
+
+::selection {
+  color: #fff;
+  background-color: color(pr1);
+}
+// body{
+//     background-color:color(pr3);
+// }
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: yellow;
+  .input {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    padding-top: 1.5rem;
+    & + .input {
+      margin-top: 1.5rem;
+    }
+  }
+
+  .input-label, .input-label-text-area {
+    color: #8597a3;
+    position: absolute;
+    top: 1.5rem;
+    transition: 0.25s ease;
+  }
+
+  .input-field {
+    border: 0;
+    z-index: 1;
+    background-color: transparent;
+    border-bottom: 2px solid #eee;
+    font: inherit;
+    font-size: 1.125rem;
+    padding: 0.25rem 0;
+    &:focus,
+    &:valid {
+      outline: 0;
+      border-bottom-color: #6658d3;
+      & + .input-label  {
+        color: #6658d3;
+        transform: translateY(-1.5rem);
+      }
+      & + .input-label-text-area  {
+        color: #6658d3;
+        transform: translateY(-1.5rem);
+      }
+    }
+  }
+}

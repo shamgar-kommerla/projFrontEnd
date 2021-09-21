@@ -16,10 +16,17 @@ $colors: (
 body {
   min-height: 150vh;
 }
-a {
+a { 
   text-decoration: none;
   color: #000;
 }
+
+::selection{
+  color: #fff;
+  background-color: color(headerbg);
+}
+
+
 nav {
   position: sticky;
   top: 0;
@@ -37,6 +44,29 @@ nav {
     .logo {
       letter-spacing: 2px;
     }
+    
+    .set-2{
+      display: flex;
+      justify-content: center;
+    align-items: flex-end;
+      form{
+        display: flex;
+        input{
+          height: 30px;
+          width: 200px;
+          outline: none;
+          border: none;
+          background-color: transparent;
+        }
+        input:focus{
+          border-bottom: 1px solid color(headerbg);
+        }
+
+        a{
+          cursor: pointer;
+        }
+      }
+    }
     .buttons {
       list-style-type: none;
       display: flex;
@@ -44,51 +74,66 @@ nav {
       li {
         padding: 0.5rem;
         a {
+          font-size: 16px;
           text-decoration: none;
           color: #fff;
-          padding: 0.5rem 1rem;
+          padding: 0.4rem 1rem;
           background-color: #001219;
           margin: 0 1rem;
         }
       }
     }
   }
-  .nav-2 {
-    width: 70%;
-    margin: 1rem auto;
-    display: flex;
-    justify-content: space-between;
-    .set-1 {
-      // flex: 0.6;
-      list-style-type: none;
-      display: flex;
-      justify-content: flex-start;
-      li {
-        padding: 0.5rem;
-        margin-right: 2rem;
-        a {
-          color: #000;
-        }
-      }
-    }
-    .set-2 {
-      list-style-type: none;
-      display: flex;
-      justify-content: flex-start;
-      li {
-        padding: 0.5rem;
-        margin-right: 0.2rem;
-        a {
-          color: #000;
-        }
-      }
-    }
-    // border-bottom: 1px solid #0012195b;
-  }
 }
+
 .container {
   min-height: 50vh;
   background-color: #f1f1f1;
+}
+
+.user-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  width: 70%;
+  margin: 1rem auto;
+  justify-content: space-evenly;
+  min-height: 20vh;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  .user-pic{
+    flex:0.4;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    img{
+      display: block;
+      width: 200px;
+      margin:auto
+    }
+    // overflow: hidden;
+    
+  }
+  .user-details{
+    flex: 0.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .heading{
+      font-weight: 500;
+    }
+    .buttons{
+      margin-top: 1rem;
+      .btn{
+        font-size:16px;
+        background-color: color(headerbg);
+        color: #fff;
+        padding: 0.4rem 1.5rem;
+      }
+    }
+  }
+   
 }
 
 /*******************
