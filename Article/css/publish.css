@@ -26,6 +26,110 @@ li {
   background-color: #003049;
 }
 
+body {
+  min-height: 100vh;
+  background-color: #f1f1f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: #f1efef;
+}
+
+nav .nav-1 {
+  width: 70%;
+  margin: 1rem auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .nav-1 .logo {
+  letter-spacing: 2px;
+}
+
+nav .nav-1 .set-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+nav .nav-1 .set-2 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .nav-1 .set-2 form input {
+  height: 30px;
+  width: 200px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+nav .nav-1 .set-2 form input:focus {
+  border-bottom: 1px solid #001219;
+}
+
+nav .nav-1 .set-2 form a {
+  cursor: pointer;
+}
+
+nav .nav-1 .buttons {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav .nav-1 .buttons li {
+  padding: 0.5rem;
+}
+
+nav .nav-1 .buttons li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  background-color: #001219;
+  margin: 0 1rem;
+}
+
 .container {
   width: 100%;
   display: -webkit-box;
@@ -34,7 +138,31 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: yellow;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container h2 {
+  font-size: 24px;
+}
+
+.container form {
+  background-color: #fff;
+  width: 50%;
+  padding: 3rem;
+}
+
+.container form fieldset {
+  padding: 1rem 3rem;
+}
+
+.container form div {
+  margin-bottom: 1rem;
 }
 
 .container .input {
@@ -73,18 +201,89 @@ li {
 
 .container .input-field:focus, .container .input-field:valid {
   outline: 0;
-  border-bottom-color: #6658d3;
+  border-bottom-color: #001219;
 }
 
 .container .input-field:focus + .input-label, .container .input-field:valid + .input-label {
-  color: #6658d3;
+  color: #001219;
   -webkit-transform: translateY(-1.5rem);
           transform: translateY(-1.5rem);
 }
 
 .container .input-field:focus + .input-label-text-area, .container .input-field:valid + .input-label-text-area {
-  color: #6658d3;
+  color: #001219;
   -webkit-transform: translateY(-1.5rem);
           transform: translateY(-1.5rem);
+}
+
+.container .input-image {
+  position: relative;
+  margin: 1rem auto;
+  border: 1px solid #001219;
+  background-color: #001219;
+  color: #fff;
+  text-align: center;
+  padding: 0.2rem;
+}
+
+.container .input-image span {
+  font-size: 16px;
+}
+
+.container .input-image .file-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  cursor: pointer;
+  opacity: 0;
+  width: 100%;
+}
+
+.container .addition-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .addition-buttons a {
+  background-color: #001219;
+  padding: 0.2rem 1rem;
+  color: #fff;
+  font-size: 16px;
+}
+
+.container .addition-buttons a span {
+  font-weight: bolder;
+}
+
+.container .form-submission {
+  margin: 1rem auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .form-submission .submit-btn {
+  background-color: #f77f00;
+  border: none;
+  padding: 0.3rem 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container .form-submission .cancel-btn {
+  background-color: red;
+  border: none;
+  padding: 0.3rem 2rem;
+  color: #fff;
+  cursor: pointer;
 }
 /*# sourceMappingURL=publish.css.map */

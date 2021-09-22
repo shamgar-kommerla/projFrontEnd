@@ -36,15 +36,112 @@ li {
   color: #fff;
   background-color: color(pr1);
 }
-// body{
-//     background-color:color(pr3);
-// }
+body{
+  min-height: 100vh;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+
+
+
+
+nav {
+  position: absolute;
+  top: 0;
+  color: #000;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(241, 239, 239);
+  .nav-1 {
+    width: 70%;
+    margin: 1rem auto 0;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      letter-spacing: 2px;
+    }
+    
+    .set-2{
+      display: flex;
+      justify-content: center;
+    align-items: flex-end;
+      form{
+        display: flex;
+        input{
+          height: 30px;
+          width: 200px;
+          outline: none;
+          border: none;
+          background-color: transparent;
+        }
+        input:focus{
+          border-bottom: 1px solid color(headerbg);
+        }
+
+        a{
+          cursor: pointer;
+        }
+      }
+    }
+    .buttons {
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-end;
+      li {
+        padding: 0.5rem;
+        a {
+          font-size: 16px;
+          text-decoration: none;
+          color: #fff;
+          padding: 0.4rem 1rem;
+          background-color: #001219;
+          margin: 0 1rem;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .container {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: yellow;
+  flex-direction: column;
+  align-items: center;
+  
+  h2{
+    font-size: 24px;
+  }
+  form{
+    background-color: #fff;
+    width: 50%;
+    padding: 3rem;
+    // box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    fieldset{
+      padding: 1rem 3rem;
+    }
+  div{
+    margin-bottom: 1rem;
+  }}
   .input {
     display: flex;
     flex-direction: column-reverse;
@@ -73,15 +170,74 @@ li {
     &:focus,
     &:valid {
       outline: 0;
-      border-bottom-color: #6658d3;
+      // border-bottom-color: #6658d3;
+      border-bottom-color:#001219;
       & + .input-label  {
-        color: #6658d3;
+        // color: #6658d3;
+        color: #001219;
         transform: translateY(-1.5rem);
       }
       & + .input-label-text-area  {
-        color: #6658d3;
+        // color: #6658d3;
+        color: #001219;
         transform: translateY(-1.5rem);
       }
+    }
+  }
+
+  .input-image{
+    position: relative;
+    margin: 1rem auto;
+    border:1px solid #001219;
+    background-color: #001219;
+    color: #fff;
+    text-align: center;
+    padding: 0.2rem;
+    span{
+      font-size: 16px;
+    }
+    .file-input{
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 0;
+      cursor: pointer;
+      opacity: 0;
+      width: 100%;
+    }
+  }
+
+  .addition-buttons{
+    display: flex;
+    justify-content: space-between;
+    a{
+      background-color: #001219;
+      padding: 0.2rem 1rem;
+      color: #fff;
+      font-size: 16px;
+      span{
+        font-weight:bolder;
+      }
+    }
+  }
+  .form-submission{
+    margin: 1rem auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .submit-btn{
+      background-color:#f77f00;
+      border: none;
+      padding: 0.3rem 2rem;
+      color: #fff;
+      cursor: pointer;
+    }
+    .cancel-btn{
+      background-color:red;
+      border: none;
+      padding: 0.3rem 2rem;
+      color: #fff;
+      cursor: pointer;
     }
   }
 }
