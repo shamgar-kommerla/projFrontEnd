@@ -46,7 +46,8 @@ nav {
     .set-2{
       display: flex;
       justify-content: center;
-    align-items: flex-end;
+      align-items: flex-end;
+      flex-wrap: wrap;
       form{
         display: flex;
         input{
@@ -59,7 +60,6 @@ nav {
         input:focus{
           border-bottom: 1px solid color(headerbg);
         }
-
         a{
           cursor: pointer;
         }
@@ -75,7 +75,7 @@ nav {
           font-size: 16px;
           text-decoration: none;
           color: #fff;
-          padding: 0.4rem 1rem;
+          padding: 0.4rem 2rem;
           background-color: #001219;
           margin: 0 1rem;
         }
@@ -83,40 +83,6 @@ nav {
     }
   }
 }
-
-//   .nav-2 {
-//     width: 70%;
-//     margin: 1rem auto;
-//     display: flex;
-//     justify-content: space-between;
-//     .set-1 {
-//       // flex: 0.6;
-//       list-style-type: none;
-//       display: flex;
-//       justify-content: flex-start;
-//       li {
-//         padding: 0.5rem;
-//         margin-right: 2rem;
-//         a {
-//           color: #000;
-//         }
-//       }
-//     }
-//     .set-2 {
-//       list-style-type: none;
-//       display: flex;
-//       justify-content: flex-start;
-//       li {
-//         padding: 0.5rem;
-//         margin-right: 0.2rem;
-//         a {
-//           color: #000;
-//         }
-//       }
-//     }
-//     // border-bottom: 1px solid #0012195b;
-//   }
-// }
 
 .container {
   min-height: 50vh;
@@ -140,7 +106,7 @@ nav {
       border-bottom: 2px solid #000;
     }
   }
-  .article-card {
+  .article-card { 
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.5rem;
@@ -151,6 +117,20 @@ nav {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      .article-heading{
+        font-size: 16px;
+        h3{
+          font-weight: 600;
+        }
+      }
+    }
+    .article-content{ 
+      color: rgb(41, 38, 38);
+      font-size: 14px;
+    }
+    .article-publish-date{
+      font-size: 12px;
+      color: rgb(41, 38, 38);
     }
     .article-img {
       flex: 0.2;
@@ -171,7 +151,7 @@ nav {
       color: #fff;
       background-color: #001219;
       text-decoration: none;
-      padding: 0.7rem 2rem;
+      padding: 0.4rem 2rem;
     }
   }
 }
@@ -205,7 +185,7 @@ nav {
       color: #fff;
       background-color: #001219;
       text-decoration: none;
-      padding: 0.7rem 2rem;
+      padding: 0.4rem 2rem;
     }
   }
 }
@@ -260,3 +240,7 @@ footer {
   min-height: 30vh;
   background-color: #001219;
 }
+
+
+// MEDIA QUERIES 
+@import './med_n_user'

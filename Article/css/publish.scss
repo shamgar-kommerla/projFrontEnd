@@ -45,9 +45,6 @@ body{
   align-items: center;
 }
 
-
-
-
 nav {
   position: absolute;
   top: 0;
@@ -106,9 +103,6 @@ nav {
     }
   }
 }
-
-
-
 
 
 
@@ -210,11 +204,15 @@ nav {
   .addition-buttons{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     a{
+      text-align: center;
+      // flex: 0.2;
+      // margin: 0.4rem  ;
       background-color: #001219;
       padding: 0.2rem 1rem;
       color: #fff;
-      font-size: 16px;
+      font-size: 14px;
       span{
         font-weight:bolder;
       }
@@ -225,7 +223,11 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     .submit-btn{
+      // flex 0.4;
+      // width: 80%;
+      // margin:0.4rem auto;
       background-color:#f77f00;
       border: none;
       padding: 0.3rem 2rem;
@@ -233,11 +235,19 @@ nav {
       cursor: pointer;
     }
     .cancel-btn{
+      // flex: 0.4;
+      // margin:0.4rem auto;
+      // width: 80%;
       background-color:red;
       border: none;
       padding: 0.3rem 2rem;
+      // padding: 15px 20px;
       color: #fff;
       cursor: pointer;
     }
   }
 }
+
+
+// MEDIA QUERIES
+@import './med_publish';

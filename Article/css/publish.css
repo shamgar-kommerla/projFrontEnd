@@ -247,13 +247,16 @@ nav .nav-1 .buttons li a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container .addition-buttons a {
+  text-align: center;
   background-color: #001219;
   padding: 0.2rem 1rem;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .container .addition-buttons a span {
@@ -269,6 +272,8 @@ nav .nav-1 .buttons li a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container .form-submission .submit-btn {
@@ -285,5 +290,45 @@ nav .nav-1 .buttons li a {
   padding: 0.3rem 2rem;
   color: #fff;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body nav {
+    display: none;
+  }
+  body .container {
+    width: 100%;
+    margin: 1rem auto;
+  }
+  body .container h2 {
+    font-size: 24px;
+  }
+  body .container form .addition-buttons a {
+    width: 50%;
+    margin: 0.2rem auto;
+    font-size: 10px;
+    border-radius: 3px;
+  }
+  body .container form .addition-buttons a span {
+    font-weight: normal;
+  }
+  body .container form .form-submission {
+    margin: 1rem auto;
+    width: 100%;
+  }
+  body .container form .form-submission .submit-btn {
+    width: 100%;
+    margin: 0.3rem auto;
+  }
+  body .container form .form-submission .cancel-btn {
+    width: 100%;
+    margin: 0.3rem auto;
+  }
 }
 /*# sourceMappingURL=publish.css.map */
