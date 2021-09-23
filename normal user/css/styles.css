@@ -126,7 +126,6 @@ nav .nav-1 .buttons li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 75%;
   margin: 0 auto;
 }
 
@@ -138,6 +137,7 @@ nav .nav-1 .buttons li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 auto;
 }
 
 .articles .heading h2 {
@@ -371,6 +371,7 @@ footer {
     list-style-type: none;
   }
   body .user-container {
+    width: 80%;
     background-color: #fff;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -395,26 +396,27 @@ footer {
   body .user-container .user-details .buttons {
     margin-top: 1rem;
   }
-  body .articles {
+  body .article-container .articles {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 2rem;
+    padding: 1.5rem;
   }
-  body .articles .heading h2 {
+  body .article-container .articles .heading h2 {
     margin-bottom: 1rem;
     display: inline-block;
     border-bottom: 2px solid #000;
   }
-  body .articles .article-card {
+  body .article-container .articles .article-card {
     margin-bottom: 1.5rem;
     min-height: 150px;
   }
-  body .articles .article-card .article-main {
+  body .article-container .articles .article-card .article-main {
     padding: 0.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -427,34 +429,34 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  body .articles .article-card .article-main .article-heading {
+  body .article-container .articles .article-card .article-main .article-heading {
     font-size: 16px;
   }
-  body .articles .article-card .article-main .article-heading h3 {
+  body .article-container .articles .article-card .article-main .article-heading h3 {
     font-weight: 600;
   }
-  body .articles .article-card .article-content {
+  body .article-container .articles .article-card .article-content {
     color: #292626;
     font-size: 14px;
   }
-  body .articles .article-card .article-publish-date {
+  body .article-container .articles .article-card .article-publish-date {
     font-size: 12px;
     color: #292626;
   }
-  body .articles .article-card .article-img {
+  body .article-container .articles .article-card .article-img {
     background-color: grey;
   }
-  body .articles .article-card .article-img img {
+  body .article-container .articles .article-card .article-img img {
     width: 250px;
     height: 200px;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  body .articles .article-card:hover {
+  body .article-container .articles .article-card:hover {
     -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
             box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
   }
-  body .articles .more a {
+  body .article-container .more a {
     color: #fff;
     background-color: #001219;
     text-decoration: none;
@@ -467,6 +469,7 @@ footer {
     width: 90%;
   }
   body .user-container {
+    width: 90%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: 0.5rem auto;
@@ -503,7 +506,6 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 80%;
     margin: 0 auto;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
