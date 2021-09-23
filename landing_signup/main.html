@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css"
+    />
 
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Landing page</title>
@@ -11,13 +19,21 @@
   <body>
     <!-- NAVIGATION BAR -->
     <nav class="navbar">
-      <ul>
+      <ul id="nav-toggled">
         <li><a href="#about">About Us</a></li>
         <li><a href="#vision">Vision</a></li>
         <li><a href="#creators">Creators</a></li>
         <li><a href="">Contact Us</a></li>
       </ul>
     </nav>
+
+    <a href="#" id="toggler">
+      <div class="bars">
+        <div class="l1"></div>
+        <div class="l2"></div>
+        <div class="l3"></div>
+      </div>
+    </a>
 
     <!-- HEADER SECTION  -->
     <header>
@@ -38,7 +54,7 @@
       <div>
         <h2>OUR VISION</h2>
       </div>
-      <div>
+      <div class="vision-content v1">
         <div><img src="./vug.jpg" alt="" /></div>
         <div>
           <p>
@@ -53,11 +69,11 @@
       </div>
     </section>
     <!-- WHAT YOU WILL FIND HERE  -->
-    <section id="about" class="vision-section">
+    <section id="about" class="vision-section ">
       <div>
         <h2>WHAT YOU WILL FIND HERE</h2>
       </div>
-      <div>
+      <div class="vision-content v2">
         <div>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
@@ -97,5 +113,8 @@
     </section>
     <!-- FOOTER SECTION -->
     <footer></footer>
+
+
+    <script src="./js/scripts.js"></script>
   </body>
 </html>

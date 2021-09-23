@@ -2,7 +2,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -59,6 +59,22 @@ nav ul a {
 
 nav ul a:hover {
   color: #003049;
+}
+
+.bars {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  display: none;
+}
+
+.bars .l1,
+.bars .l2,
+.bars .l3 {
+  width: 30px;
+  height: 2.5px;
+  margin-bottom: 5px;
+  background-color: #fff;
 }
 
 header {
@@ -136,6 +152,8 @@ header .buttons a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .vision-section div {
@@ -208,5 +226,186 @@ header .buttons a {
 footer {
   min-height: 30vh;
   background-color: #003049;
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
+  }
+  nav ul {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 0;
+    left: 100%;
+    height: 100vh;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  nav ul li {
+    margin-bottom: 1.5rem;
+  }
+  nav .trans-effect {
+    left: 0;
+  }
+  .bars {
+    position: absolute;
+    z-index: 5;
+    right: 2rem;
+    top: 2rem;
+    display: block;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .bars .l1,
+  .bars .l2,
+  .bars .l3 {
+    width: 35px;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .l1-trans {
+    margin-top: 13px;
+    margin-bottom: 0;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+  }
+  .l2-trans {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+    margin-bottom: 0;
+  }
+  .l3-trans {
+    margin-top: -13px;
+    margin-bottom: 0;
+    -webkit-transform: rotateZ(-45deg);
+            transform: rotateZ(-45deg);
+  }
+  header h1 {
+    font-size: 48px;
+    letter-spacing: 5px;
+  }
+  header h3 {
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 15px;
+    margin-bottom: 1.5rem;
+  }
+  header h3 span {
+    color: #f77f00;
+  }
+  header .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  header .buttons a {
+    -webkit-box-flex: 0.4;
+        -ms-flex: 0.4;
+            flex: 0.4;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    background-color: #003049;
+  }
+  .vision-section {
+    margin-bottom: 2rem;
+  }
+  .vision-section .vision-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .vision-section .v1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .vision-section .v2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .vision-section div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 85%;
+    margin: auto;
+  }
+  .vision-section div h2 {
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+  .vision-section div div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 2rem;
+  }
+  .creators-section {
+    min-height: 60vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .creators-section div h2 {
+    font-size: 32px;
+    letter-spacing: 5px;
+  }
+  .creators-section .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 70%;
+  }
+  .creators-section .cards .card {
+    margin: 0.3rem;
+    width: 250px;
+    height: 320px;
+    background-color: #d62828;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
