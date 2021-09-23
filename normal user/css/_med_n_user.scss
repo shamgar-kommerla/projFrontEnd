@@ -1,12 +1,11 @@
 @media screen and (max-width: 1100px) {
   body {
+    // background-color: blue;
+    // background-color: #d8d0d0;
     nav {
       .nav-1 {
         width: 70%;
         margin: 1rem auto 0;
-        display: flex;
-        //   justify-content: space-between;
-        justify-content: center;
         flex-direction: column;
         align-items: center;
         .logo {
@@ -14,8 +13,8 @@
         }
         .set-2 {
           display: flex;
-          justify-content: center;
-          align-items: flex-end;
+          // justify-content: center;
+          // align-items: flex-end;
           form {
             display: flex;
             margin-bottom: 0.5rem;
@@ -27,57 +26,26 @@
       }
     }
 
-
-
-    .container {
-      min-height: 50vh;
-      background-color: #f1f1f1;
-    }
-
     .user-container {
+      background-color: #fff;
        flex-wrap: wrap;
+       margin: 0.5rem auto;
+       align-items: center;
         .user-pic {
-          flex: 0.4;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          flex: 1;
           img {
-            display: block;
             width: 200px;
-            margin: auto;
-            height: auto;
           }
         }
         .user-details {
-          flex: 0.6;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-evenly;
-          flex-wrap: wrap;
-          .heading {
-            font-weight: 500;
-          }
+          flex: 1;
           .buttons {
             margin-top: 1rem;
-            .btn {
-              font-size: 16px;
-              background-color: color(headerbg);
-              color: #fff;
-              padding: 0.4rem 1.5rem;
-            }
           }
         }
       }
 
-
-    .article-container {
-      display: flex;
-      width: 75%;
-      margin: 0 auto;
-      flex-wrap: wrap;
-    }
     .articles {
-      // flex: 0.7;
       display: flex;
       flex-direction: column;
       padding: 2rem;
@@ -89,13 +57,16 @@
         }
       }
       .article-card {
-        display: flex;
-        justify-content: space-between;
+        // background-color: #fff;
+        // display: flex;
+        // justify-content: space-between;
         margin-bottom: 1.5rem;
-        height: 150px;
+        // align-items: stretch;
+        min-height: 150px;
+        // padding: 0.5rem auto;
         .article-main {
           padding: 0.5rem;
-          flex: 0.7;
+          // flex: 0.7;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -115,12 +86,13 @@
           color: rgb(41, 38, 38);
         }
         .article-img {
-          flex: 0.2;
-          height: 150px;
+          // flex: 0.3;
+          // height:200px;
           background-color: grey;
           img {
-            height: 100%;
-            width: auto;
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
           }
         }
       }
@@ -138,9 +110,76 @@
       }
     }
 
-    .most-viewed {
+
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  body {
+    nav{
+      .nav-1{
+        width: 90%;
+      }
+    }
+    .user-container {
+       flex-wrap: wrap;
+       margin: 0.5rem auto;
+       flex-direction: column;
+       align-items: center;
+        .user-pic {
+          flex: 1;
+          margin-bottom: 1.5rem;
+          img {
+            
+            width: 250px;
+            border-radius: 50%;
+          }
+        }
+        .user-details {
+          flex: 1;
+          
+          .buttons {
+            margin: 1rem auto;
+          
+          }
+        }
+      }  
+    
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 750px) {
+  body {
+    .article-container {
+      display: flex;
+      width: 80%;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+    .articles {
+      // flex: 0.7;
       display: flex;
       flex-direction: column;
+      padding: 0.5rem;
       .heading {
         h2 {
           margin-bottom: 1rem;
@@ -148,19 +187,17 @@
           border-bottom: 2px solid #000;
         }
       }
-      width: 70%;
-      margin: 1rem auto;
-      .most-cards {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        margin-bottom: 2rem;
-        .most-card {
-          width: 250px;
-          background-color: orange;
-          height: 250px;
-          margin: 0.5rem;
+      .article-card {
+        .article-main{
+          flex: 1;
         }
+        .article-img {
+          display: none;
+        }
+      }
+
+      .article-card:hover {
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
       }
       .more {
         a {
@@ -171,6 +208,8 @@
         }
       }
     }
+
+    
 
     
   }

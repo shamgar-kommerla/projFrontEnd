@@ -7,6 +7,7 @@
 
 body {
   min-height: 150vh;
+  background-color: #f1f1f1;
 }
 
 a {
@@ -119,7 +120,6 @@ nav .nav-1 .buttons li a {
 
 .container {
   min-height: 50vh;
-  background-color: #f1f1f1;
 }
 
 .article-container {
@@ -138,7 +138,6 @@ nav .nav-1 .buttons li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2rem;
 }
 
 .articles .heading h2 {
@@ -154,12 +153,15 @@ nav .nav-1 .buttons li a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 1.5rem;
-  height: 150px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  background-color: #fff;
+  margin-bottom: 1rem;
 }
 
 .articles .article-card .article-main {
-  padding: 0.5rem;
+  padding: 0.7rem;
   -webkit-box-flex: 0.7;
       -ms-flex: 0.7;
           flex: 0.7;
@@ -175,20 +177,20 @@ nav .nav-1 .buttons li a {
           justify-content: space-between;
 }
 
-.articles .article-card .article-main .article-heading {
+.articles .article-card .article-main .main-1 .article-heading {
   font-size: 16px;
 }
 
-.articles .article-card .article-main .article-heading h3 {
+.articles .article-card .article-main .main-1 .article-heading h3 {
   font-weight: 600;
 }
 
-.articles .article-card .article-content {
+.articles .article-card .article-main .main-1 .article-content {
   color: #292626;
   font-size: 14px;
 }
 
-.articles .article-card .article-publish-date {
+.articles .article-card .article-main .main-2 .article-publish-date {
   font-size: 12px;
   color: #292626;
 }
@@ -197,13 +199,13 @@ nav .nav-1 .buttons li a {
   -webkit-box-flex: 0.2;
       -ms-flex: 0.2;
           flex: 0.2;
-  height: 150px;
+  height: 200px;
   background-color: grey;
 }
 
 .articles .article-card .article-img img {
-  height: 100%;
   width: auto;
+  height: 100%;
 }
 
 .articles .article-card:hover {
@@ -263,8 +265,6 @@ nav .nav-1 .buttons li a {
 }
 
 .user-container {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,12 +345,6 @@ footer {
   body nav .nav-1 {
     width: 70%;
     margin: 1rem auto 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -366,12 +360,6 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
   }
   body nav .nav-1 .set-2 form {
     display: -webkit-box;
@@ -382,71 +370,30 @@ footer {
   body nav .nav-1 .buttons {
     list-style-type: none;
   }
-  body .container {
-    min-height: 50vh;
-    background-color: #f1f1f1;
-  }
   body .user-container {
+    background-color: #fff;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  body .user-container .user-pic {
-    -webkit-box-flex: 0.4;
-        -ms-flex: 0.4;
-            flex: 0.4;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin: 0.5rem auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
+  body .user-container .user-pic {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
   body .user-container .user-pic img {
-    display: block;
     width: 200px;
-    margin: auto;
-    height: auto;
   }
   body .user-container .user-details {
-    -webkit-box-flex: 0.6;
-        -ms-flex: 0.6;
-            flex: 0.6;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  body .user-container .user-details .heading {
-    font-weight: 500;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
   body .user-container .user-details .buttons {
     margin-top: 1rem;
-  }
-  body .user-container .user-details .buttons .btn {
-    font-size: 16px;
-    background-color: #001219;
-    color: #fff;
-    padding: 0.4rem 1.5rem;
-  }
-  body .article-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 75%;
-    margin: 0 auto;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   body .articles {
     display: -webkit-box;
@@ -464,20 +411,11 @@ footer {
     border-bottom: 2px solid #000;
   }
   body .articles .article-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     margin-bottom: 1.5rem;
-    height: 150px;
+    min-height: 150px;
   }
   body .articles .article-card .article-main {
     padding: 0.5rem;
-    -webkit-box-flex: 0.7;
-        -ms-flex: 0.7;
-            flex: 0.7;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -504,15 +442,13 @@ footer {
     color: #292626;
   }
   body .articles .article-card .article-img {
-    -webkit-box-flex: 0.2;
-        -ms-flex: 0.2;
-            flex: 0.2;
-    height: 150px;
     background-color: grey;
   }
   body .articles .article-card .article-img img {
-    height: 100%;
-    width: auto;
+    width: 250px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   body .articles .article-card:hover {
     -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
@@ -524,7 +460,55 @@ footer {
     text-decoration: none;
     padding: 0.4rem 2rem;
   }
-  body .most-viewed {
+}
+
+@media screen and (max-width: 900px) {
+  body nav .nav-1 {
+    width: 90%;
+  }
+  body .user-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0.5rem auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .user-container .user-pic {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-bottom: 1.5rem;
+  }
+  body .user-container .user-pic img {
+    width: 250px;
+    border-radius: 50%;
+  }
+  body .user-container .user-details {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  body .user-container .user-details .buttons {
+    margin: 1rem auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body .article-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .articles {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -532,32 +516,26 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 70%;
-    margin: 1rem auto;
+    padding: 0.5rem;
   }
-  body .most-viewed .heading h2 {
+  body .articles .heading h2 {
     margin-bottom: 1rem;
     display: inline-block;
     border-bottom: 2px solid #000;
   }
-  body .most-viewed .most-cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-bottom: 2rem;
+  body .articles .article-card .article-main {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
-  body .most-viewed .most-cards .most-card {
-    width: 250px;
-    background-color: orange;
-    height: 250px;
-    margin: 0.5rem;
+  body .articles .article-card .article-img {
+    display: none;
   }
-  body .most-viewed .more a {
+  body .articles .article-card:hover {
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  }
+  body .articles .more a {
     color: #fff;
     background-color: #001219;
     text-decoration: none;
