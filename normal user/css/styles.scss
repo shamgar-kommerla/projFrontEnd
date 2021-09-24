@@ -100,7 +100,7 @@ nav {
   flex-direction: column;
   margin: 0 auto;
 
-  // width: 100%;
+  // width: 100%; 
   // padding: 2rem;
   .heading {
     h2 {
@@ -142,12 +142,13 @@ nav {
       
     }
     .article-img {
-      flex: 0.2;
-      height: 200px;
+      flex: 0.3;
+      height: 150px;
       background-color: grey;
       img {
-        width: auto;
-        height: 100%;
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
       }
     }
   }
