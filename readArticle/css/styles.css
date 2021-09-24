@@ -1,0 +1,149 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* NAvigation menu */
+nav {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  padding: 1.5rem;
+  position: fixed;
+  min-height: 20vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .logo-section img {
+  width: 400px;
+}
+
+nav #hamburger {
+  width: 40px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+nav #hamburger .bar1, nav #hamburger .bar2, nav #hamburger .bar3 {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+nav #hamburger .bar1-change {
+  background-color: #fff;
+  -webkit-transform: translateY(10px) rotateZ(45deg);
+          transform: translateY(10px) rotateZ(45deg);
+}
+
+nav #hamburger .bar2-change {
+  background-color: #fff;
+  opacity: 0;
+}
+
+nav #hamburger .bar3-change {
+  background-color: #fff;
+  -webkit-transform: translateY(-10px) rotateZ(-45deg);
+          transform: translateY(-10px) rotateZ(-45deg);
+}
+
+nav #nav-list {
+  position: absolute;
+  z-index: 1 !important;
+  top: 100%;
+  left: 20%;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+nav #nav-list li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+nav #nav-list li a {
+  padding: 0.4rem 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav .nav-list-change {
+  opacity: 1 !important;
+}
+
+#nav-bg {
+  position: absolute;
+  z-index: -1;
+  top: -40%;
+  left: -40%;
+  width: 20%;
+  height: 20%;
+  background-color: #7B2CBF;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.nav-bg-change {
+  position: absolute;
+  width: 110% !important;
+  height: 110% !important;
+}
+
+/** HEADER SECTION **/
+header {
+  position: relative;
+  z-index: -5;
+  height: 100vh;
+  width: 100%;
+}
+
+header #vbg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header .header-overlay {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.692);
+}
+
+@media screen and (max-width: 500px) {
+  nav .logo-section img {
+    width: 250px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -6,7 +6,7 @@ console.log(closeBtn);
     
 sign.addEventListener('click', ()=> {
     modalContainer[0].style.zIndex = 3;
-    modalContainer[0].style.backgroundColor = '#f1f1f1';
+    // modalContainer[0].style.backgroundColor = '#f1f1f1';
     if(modalContainer[0].children[0].classList.length <=1){
         modalContainer[0].children[0].classList.add('modal-transition');
     }else{
@@ -20,7 +20,7 @@ closeBtn.addEventListener('click', () => {
         modalContainer[0].children[0].classList.remove('modal-transition');
         setTimeout(()=> {
             modalContainer[0].style.zIndex = -1;
-            modalContainer[0].style.backgroundColor = '#fff';
+            // modalContainer[0].style.backgroundColor = '#fff';
         },100);
         
     }

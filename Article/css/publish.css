@@ -35,6 +35,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: #3f007a;
+  background: linear-gradient(45deg, #3f007a 0%, #3f007a 25%, #a261dd 25%, #a965e2 82%, #5a189a 82%);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -55,7 +57,7 @@ nav {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  background-color: #f1efef;
+  background-color: #D9BAF2;
 }
 
 nav .nav-1 {

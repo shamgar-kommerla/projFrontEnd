@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* NAvigation menu */
+nav{
+    position: absolute;
+    z-index: 0;
+    top:0;
+    padding: 1.5rem;
+    position: fixed;
+    min-height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .logo-section{
+        img{
+            width: 400px;
+        }
+    }
+    // background-color: lawngreen;
+    #hamburger{
+        width: 40px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        .bar1,.bar2,.bar3{
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            transition: all 0.3s;
+        }
+        .bar1-change{
+            background-color: #fff;
+            transform: translateY(10px) rotateZ(45deg);
+        }
+        .bar2-change{
+            background-color: #fff;
+            opacity:0;
+        }
+        .bar3-change{
+            background-color: #fff;
+            transform: translateY(-10px) rotateZ(-45deg);
+        }
+    }
+    #nav-list{
+        position: absolute;
+        // color: #fff;
+        z-index:1 !important;
+        top: 100%;
+        left: 20%; 
+        // display:none;
+        opacity: 0;
+        transition: all 0.3s ease-in;
+        // transition-delay: 0.3s;
+        li{
+            list-style-type: none;
+            margin-bottom: 1rem;
+            text-align: center;
+            a{
+                padding: 0.4rem 1rem;
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }  
+    .nav-list-change{
+        // z-index: 4;
+        opacity: 1 !important;
+        // display: inline-block !important;
+    }
+}
+#nav-bg{
+    position: absolute;
+    z-index: -1;
+    // opacity: 0;
+    top: -40%;
+    left: -40%;
+    width: 20%;
+    height: 20%;
+    background-color: #7B2CBF;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.nav-bg-change{
+    position: absolute;
+
+    width: 110% !important;
+    height: 110% !important;
+    // opacity: 1 !important;
+}
+
+
+/** HEADER SECTION **/
+header{
+    position: relative;
+    // background-color: yellow;
+    z-index: -5;
+    height: 100vh;
+    width: 100%;
+    #vbg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .header-overlay{
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.692);
+    }
+}
+
+@media screen and(max-width: 500px) {
+    nav{
+        .logo-section{
+            img{
+                width: 250px;
+            }
+        }
+    }    
+}
