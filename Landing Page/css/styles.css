@@ -1,0 +1,427 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  z-index: -10;
+  font-family: "Roboto", sans-serif;
+  overflow: scroll;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* NAvigation menu */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 5vh;
+  width: 100%;
+}
+
+.navbar nav {
+  z-index: 0;
+  padding: 1rem;
+  min-height: 5vh;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar nav .logo-section img {
+  width: 300px;
+}
+
+.navbar nav #hamburger {
+  width: 40px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.navbar nav #hamburger .bar1,
+.navbar nav #hamburger .bar2,
+.navbar nav #hamburger .bar3 {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.navbar nav #hamburger .bar1-change {
+  background-color: #fff;
+  -webkit-transform: translateY(10px) rotateZ(45deg);
+          transform: translateY(10px) rotateZ(45deg);
+}
+
+.navbar nav #hamburger .bar2-change {
+  background-color: #fff;
+  opacity: 0;
+}
+
+.navbar nav #hamburger .bar3-change {
+  background-color: #fff;
+  -webkit-transform: translateY(-10px) rotateZ(-45deg);
+          transform: translateY(-10px) rotateZ(-45deg);
+}
+
+.navbar nav #nav-list {
+  position: absolute;
+  z-index: 1 !important;
+  top: 200%;
+  left: 20%;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.navbar nav #nav-list li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.navbar nav #nav-list li a {
+  padding: 0.4rem 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar nav .nav-list-change {
+  opacity: 1 !important;
+}
+
+#nav-bg {
+  position: fixed;
+  z-index: -1;
+  top: -50%;
+  left: -50%;
+  width: 20%;
+  height: 20%;
+  background-color: #7b2cbf;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.nav-bg-change {
+  position: absolute;
+  width: 120% !important;
+  height: 120% !important;
+}
+
+/** HEADER SECTION **/
+header {
+  position: relative;
+  z-index: -5;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-content {
+  position: relative;
+  width: 50%;
+  z-index: 4;
+  text-align: center;
+  cursor: pointer;
+}
+
+header .header-content h1 {
+  color: #fff;
+  font-size: 48px;
+}
+
+header .header-content p {
+  cursor: pointer;
+  color: #fff;
+}
+
+header .header-content .buttons {
+  position: relative;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header .header-content .buttons a {
+  z-index: 11;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  background-color: #3c096c;
+}
+
+header #vbg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header .header-overlay {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.692);
+}
+
+.about-section {
+  width: 100%;
+  min-height: 40vh;
+  background-color: #fff;
+  position: relative;
+  z-index: -5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 2rem auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-section .image-section {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+.about-section .image-section img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-section .desctiption-section {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem;
+}
+
+.about-section .desctiption-section h1 {
+  color: #3c096c;
+  font-size: 40px;
+  margin-bottom: 1.5rem;
+  font-family: "Yaldevi", sans-serif;
+}
+
+.about-section .desctiption-section p {
+  font-family: "Yaldevi", sans-serif;
+  font-size: 18px;
+}
+
+.vision-section {
+  width: 100%;
+  min-height: 40vh;
+  background-color: #fff;
+  position: relative;
+  z-index: -5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 2rem auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.vision-section .image-section {
+  position: relative;
+  z-index: 6;
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3;
+}
+
+.vision-section .image-section img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.vision-section .desctiption-section {
+  z-index: 6;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem;
+}
+
+.vision-section .desctiption-section h1 {
+  color: #3c096c;
+  font-size: 40px;
+  margin-bottom: 1.5rem;
+  font-family: "Yaldevi", sans-serif;
+}
+
+.vision-section .desctiption-section p {
+  font-family: "Yaldevi", sans-serif;
+  font-size: 18px;
+}
+
+footer {
+  min-height: 20vh;
+  background-color: #3c096c;
+}
+
+@media screen and (max-width: 1000px) {
+  .about-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-section .desctiption-section {
+    padding: 1rem;
+  }
+  .about-section .desctiption-section h1 {
+    font-size: 30px;
+  }
+  .about-section .desctiption-section p {
+    font-size: 14px;
+  }
+  .vision-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .vision-section .image-section {
+    display: none;
+  }
+  .vision-section .desctiption-section {
+    padding: 1rem;
+  }
+  .vision-section .desctiption-section h1 {
+    font-size: 30px;
+  }
+  .vision-section .desctiption-section p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  header .header-content {
+    position: relative;
+    width: 50%;
+    z-index: 4;
+    text-align: center;
+    cursor: pointer;
+  }
+  header .header-content h1 {
+    color: #fff;
+    font-size: 48px;
+  }
+  header .header-content p {
+    cursor: pointer;
+    color: #fff;
+  }
+  header .header-content .buttons {
+    position: relative;
+    z-index: 11;
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .header-content .buttons a {
+    margin: 0.4rem;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    background-color: #3c096c;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar nav .logo-section img {
+    width: 200px;
+  }
+  .navbar nav #nav-list {
+    position: absolute;
+    z-index: 1 !important;
+    top: 250%;
+    left: 15%;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
