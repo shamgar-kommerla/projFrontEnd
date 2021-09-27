@@ -4,49 +4,73 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    />
+    <title>Document</title>
+  </head>
+  <style>
+    /* ===
+By : Sahar Ali Raza
+Year: 2018 - 2019
+Please do not copy this part of CSS Because it is
+Demo code for page layout === */
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/brands.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css"
-    />
-    <title>Home</title>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    /* .container {
+  margin-top: 25px;
+} */
+    /* .jumbotron h1,.jumbotron h4,.jumbotron h5{
+  color:#fff;
+}
+.jumbotron h1{
+  font-size: 27px;
+}
+.jumbotron h4{
+  font-size: 20px;
+}
+.jumbotron h5{
+  font-size: 16px;
+  color:#18bc9c;
+}
+/ */
+    /* .col-sm-2 {
+  padding: 10px;
+  border-radius: 4px;
+  height: 125px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 1px #000;
+  border: 1px solid skyblue; 
+}
+ .xmas_back{
+   background: radial-gradient(circle at center, skyblue 10%,  #fff 100%);
+} */
 
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-      }
-      body {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+    /* .close1 {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+  cursor: pointer;
+  color: #000000;
+} */
+    /* ======= PreLoader CSS Start  ========*/
 
-      .preloader{
-      position: absolute;
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(0,0,0,0.9);
-      }
+    /** END of nest6 */
+    /*-----------------------------------------------------------------------*/
+    /**===== bars1 =====*/
 
-      #wave1 {
+    /**===== wave1 =====*/
+    #wave1 {
       display: block;
       position: absolute;
       top: 50%;
       left: 50%;
-      height: 100px;
-      width: 100px;
-      transform: translate(-50%,-50%);
-      /* margin: -25px 0 0 -25px; */
+      height: 50px;
+      width: 50px;
+      margin: -25px 0 0 -25px;
       border-radius: 50%;
     }
 
@@ -54,10 +78,10 @@
     #wave1:after {
       content: "";
       /* border: 2px solid #008744; */
-      border: 2px solid #ddd;
+      border: 2px solid #fff;
       border-radius: 50%;
-      width: 100px;
-      height: 100px;
+      width: 50px;
+      height: 50px;
       position: absolute;
       left: 0px;
     }
@@ -132,41 +156,21 @@
         opacity: 0;
       }
     }
-    </style>
-  </head>
+    /** END of wave1 */
+    /*-----------------------------------------------------------------------*/
+  </style>
   <body>
-    <!-- <div class="preloader text-center">
+    <!-- <body style="background:#00BCD4 !important"> -->
+
+    <!-- BEGIN CONTAINER -->
+    <div class="container text-center">
       <div class="row">
         <div class="col-sm-2">
           <div id="wave1"></div>
         </div>
-      </div> -->
+      </div>
       <!-- END of row 7 -->
     </div>
-
-
-    <ul>
-      <li>
-        <!-- <a href="./landing_signup/main.html" target="_blank">Landing Page 1</a> -->
-        <a href="./Landing Page/landing.html" target="_blank">Landing Page</a>
-      </li>
-      <li>
-        <a href="./User/admin.html" target="_blank">Admin Dashboard</a>
-      </li>
-      <li>
-        <a href="./User/user.html" target="_blank"
-          >Normal User (0) / Partial Admin (1)</a
-        >
-      </li>
-      <li>
-        <a href="./Article/article.html" target="_blank">Publish Article</a>
-      </li>
-      <li>
-        <a href="./Article/read_articles.html" target="_blank">Read Article</a>
-      </li>
-      <li>
-        <a href="./Modals/modal.html" target="_blank">Modals</a>
-      </li>
-    </ul>
+    <!-- End of div.container  -->
   </body>
 </html>

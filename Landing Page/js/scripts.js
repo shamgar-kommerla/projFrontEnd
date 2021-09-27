@@ -25,3 +25,9 @@ hamb.addEventListener('click', ()=> {
     
 })
 
+
+
+const prel =document.getElementById('preloader');
+window.addEventListener('load',() => {
+    prel.parentElement.removeChild(prel.parentElement.children[0]);
+});
