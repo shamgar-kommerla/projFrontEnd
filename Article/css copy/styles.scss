@@ -3,9 +3,10 @@
   padding: 0;
   margin: 0;
 }
-::selection{
+::selection {
   color: #fff;
-  background-color: #3F007A;
+  // background-color: #3F007A;
+  background-color: #35008b;
 }
 body {
   // width: 100%;
@@ -14,13 +15,17 @@ body {
   z-index: -10;
   font-family: "Roboto", sans-serif;
   overflow: scroll;
-//   background: rgb(63,0,122);
-// background: linear-gradient(45deg, rgba(63,0,122,1) 0%, rgba(63,0,122,1) 25%, rgba(162,97,221,1) 25%, rgba(169,101,226,1) 82%, rgba(90,24,154,1) 82%);
-background-color:rgba(129, 24, 214, 0.247);
+  //   background: rgb(63,0,122);
+  // background: linear-gradient(45deg, rgba(63,0,122,1) 0%, rgba(63,0,122,1) 25%, rgba(162,97,221,1) 25%, rgba(169,101,226,1) 82%, rgba(90,24,154,1) 82%);
+  // background-color:rgba(129, 24, 214, 0.247);
+  // background-color:#00E5C5;
 }
-p{
-  font-family: 'Poppins', sans-serif;
+
+p {
+  font-family: "Poppins", sans-serif;
+  // font-family: 'Yaldevi', sans-serif;
   margin-bottom: 1rem;
+  color: #222;
 }
 
 /* NAvigation menu */
@@ -30,10 +35,12 @@ p{
   left: 0;
   min-height: 5vh;
   // background-color: #D9BAF2;
-  background-color: #3F007A;
+  // background-color: #3F007A;
+  background-color: #f1f1f1;
   width: 100%;
+  border-bottom: 1px solid rgba(53, 0, 139, 0.5);
   nav {
-    z-index: 0;
+    z-index: -1;
     padding: 1rem;
     min-height: 5vh;
     width: 90%;
@@ -43,10 +50,8 @@ p{
     .logo-section {
       img {
         width: 300px;
-        // border: 2px solid #fff;
       }
     }
-    // background-color: lawngreen;
     #hamburger {
       width: 40px;
       height: 20px;
@@ -60,20 +65,25 @@ p{
         width: 100%;
         height: 2px;
         background-color: #fff;
+        background-color: #000;
         transition: all 0.3s;
       }
       .bar1-change {
         background-color: #fff;
+        background-color: #000;
         transform: translateY(10px) rotateZ(45deg);
       }
       .bar2-change {
         background-color: #fff;
+        background-color: #000;
         opacity: 0;
       }
       .bar3-change {
         background-color: #fff;
+        background-color: #000;
         transform: translateY(-10px) rotateZ(-45deg);
       }
+      
     }
     #nav-list {
       position: absolute;
@@ -94,8 +104,8 @@ p{
           text-decoration: none;
           color: #fff;
         }
-        a:hover{
-          color: #3F007A;
+        a:hover {
+          color: #3f007a;
         }
       }
     }
@@ -126,59 +136,83 @@ p{
   //   opacity: 1 !important;
 }
 
+.shares-section {
+  width: 65%;
+  margin: auto;
+  margin-top: 4rem;
+  min-height: 5vh;
+  // background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  border-bottom: 1px solid rgba(53, 0, 139, 0.5);
+  a {
+    i {
+      padding: 0 1rem;
+      font-size: 20px;
+      color: #000;
+    }
+  }
+  a:hover {
+    i {
+      color: #35008b;
+    }
+  }
+}
 
-
-.article-section{
+.article-section {
   position: relative;
   z-index: -4;
   min-height: 40vh;
   width: 100%;
-  .page{
+  .page {
     background-color: #fff;
-    width: 70%;
-    margin: 2rem auto;
+    width: 80%;
+    margin: 0rem auto 2rem auto;
     padding-top: 3rem;
     padding-bottom: 3rem;
     line-height: 1.25;
-    .main-heading{
-      font-family: 'Montserrat', sans-serif; 
-      font-size: 30px;
+    .main-heading {
+      font-family: "Montserrat", sans-serif;
+      font-size: 28px;
     }
-    .article-image{
+    .article-image {
       width: 80%;
-      height: 500px;
-      margin:1rem auto;
-      img{
+      height: 400px;
+      margin: 1rem auto;
+      img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
     }
-    .sub-heading{
-      font-family: 'Montserrat', sans-serif; 
+    .sub-heading {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
       width: 80%;
       margin: auto;
     }
-    .paragraph{
+    .paragraph {
       text-indent: 50px;
       width: 80%;
       margin: auto;
     }
-    .quotation{
-      // text-align: center;
-    // vertical-align:middle;
+    .quotation {
       min-height: 50px;
       width: 60%;
-      margin: auto;
-      border-left: 3px solid #3F007A;
+      margin: 1.5rem auto;
+      border-left: 3px solid #3f007a;
       display: flex;
       align-items: center;
       padding-left: 1rem;
-      p{
+      p {
+        color: #000;
         font-size: 32px;
-        // font-family: 'Bonheur Royale', cursive;
-        font-family: 'Cookie', cursive;
-      } 
+        font-family: "Cookie", cursive;
+      }
     }
   }
 }
@@ -205,44 +239,97 @@ p{
     }
   }
 
-
-  .article-section{
+  .article-section {
     position: relative;
     z-index: -4;
     min-height: 40vh;
     width: 100%;
-    .page{
+    .page {
       background-color: #fff;
       width: 90%;
       margin: 2rem auto;
       padding-top: 3rem;
-      padding-bottom: 3rem; 
+      padding-bottom: 3rem;
       line-height: 1.25;
-      .article-image{
+      .article-image {
         width: 80%;
         height: 200px;
-        margin:1rem auto;
-        img{
+        margin: 1rem auto;
+        img {
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
       }
-      .sub-heading{
+      .sub-heading {
         width: 80%;
         margin: auto;
       }
-      .paragraph{
+      .paragraph {
         text-indent: 50px;
         width: 80%;
         margin: auto;
       }
-      
     }
   }
 }
 
-footer{
-  background-color: #3F007A;
-  min-height: 20vh;
+footer {
+  background-color: #3f007a;
+  min-height: 15vh;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #section-to-print,
+  #section-to-print * {
+    visibility: visible;
+  }
+  #section-to-print {
+    background-color: #fff;
+    width: 100%;
+    padding: 0;
+    line-height: 1.25;
+    .main-heading {
+      font-family: "Montserrat", sans-serif;
+      font-size: 28px;
+    }
+    .article-image {
+      width: 90%;
+      height: 400px;
+      margin: 1rem auto;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .sub-heading {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      width: 90%;
+      margin: auto;
+    }
+    .paragraph {
+      text-indent: 50px;
+      width: 90%;
+      margin: auto;
+    }
+    .quotation {
+      min-height: 50px;
+      width: 70%;
+      margin: 1.5rem auto;
+      border-left: 3px solid #3f007a;
+      display: flex;
+      align-items: center;
+      padding-left: 1rem;
+      p {
+        color: #000;
+        font-size: 32px;
+        font-family: "Cookie", cursive;
+      }
+    }
+  }
 }

@@ -55,7 +55,6 @@ nav {
   justify-content: flex-start;
   flex-direction: column;
   width: 100%;
-  // background-color: rgb(241, 239, 239);
   background-color: #D9BAF2;
   .nav-1 {
     width: 70%;
@@ -169,14 +168,17 @@ nav {
       outline: 0;
       // border-bottom-color: #6658d3;
       border-bottom-color:#001219;
+      border-bottom-color:#3F007A;
       & + .input-label  {
         // color: #6658d3;
         color: #001219;
+        color: #3F007A;
         transform: translateY(-1.5rem);
       }
       & + .input-label-text-area  {
         // color: #6658d3;
         color: #001219;
+        color: #3F007A;
         transform: translateY(-1.5rem);
       }
     }

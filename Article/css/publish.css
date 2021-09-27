@@ -204,16 +204,19 @@ nav .nav-1 .buttons li a {
 .container .input-field:focus, .container .input-field:valid {
   outline: 0;
   border-bottom-color: #001219;
+  border-bottom-color: #3F007A;
 }
 
 .container .input-field:focus + .input-label, .container .input-field:valid + .input-label {
   color: #001219;
+  color: #3F007A;
   -webkit-transform: translateY(-1.5rem);
           transform: translateY(-1.5rem);
 }
 
 .container .input-field:focus + .input-label-text-area, .container .input-field:valid + .input-label-text-area {
   color: #001219;
+  color: #3F007A;
   -webkit-transform: translateY(-1.5rem);
           transform: translateY(-1.5rem);
 }

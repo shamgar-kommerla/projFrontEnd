@@ -12,6 +12,7 @@ body {
 
 p {
   font-family: 'Poppins', sans-serif;
+  color: #111;
 }
 
 /* NAvigation menu */
@@ -106,6 +107,10 @@ p {
   color: #fff;
 }
 
+.navbar nav #nav-list li a:hover {
+  color: #3c096c;
+}
+
 .navbar nav .nav-list-change {
   opacity: 1 !important;
 }
@@ -151,16 +156,15 @@ header .header-content {
   width: 50%;
   z-index: 4;
   text-align: center;
-  cursor: pointer;
 }
 
 header .header-content h1 {
   color: #fff;
   font-size: 48px;
+  letter-spacing: 2px;
 }
 
 header .header-content p {
-  cursor: pointer;
   color: #fff;
 }
 
@@ -182,6 +186,10 @@ header .header-content .buttons a {
   color: #fff;
   padding: 0.5rem 2rem;
   background-color: #3c096c;
+}
+
+header .header-content .buttons a:hover {
+  background-color: #460a7e;
 }
 
 header #vbg {
