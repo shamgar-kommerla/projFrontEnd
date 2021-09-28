@@ -26,8 +26,11 @@ hamb.addEventListener('click', ()=> {
 })
 
 
-
+document.body.style.position = 'fixed';
 const prel =document.getElementById('preloader');
 window.addEventListener('load',() => {
-    prel.parentElement.removeChild(prel.parentElement.children[0]);
+    setTimeout(()=> {
+        prel.parentElement.removeChild(prel.parentElement.children[0]);
+        document.body.style.position = '';
+    },2000);
 });
