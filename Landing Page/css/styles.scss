@@ -1,3 +1,12 @@
+$colors:(
+  pr:#3f007a,
+  bg:#eee,
+  nv:#ddd
+);
+@function color($colorName){
+  @return map-get($map: $colors, $key:$colorName );
+}
+
 * {
   // box-sizing: border-box;
   padding: 0;
@@ -5,6 +14,7 @@
 }
 
 body {
+  // background-color: color(bg);
   position: relative;
   z-index: -10;
   font-family: "Roboto", sans-serif;
@@ -21,7 +31,8 @@ p {
   top: 0;
   left: 0;
   min-height: 5vh;
-  // background-color: rgba(0, 0, 0, 0.548);
+  // background-color: color(nv);
+  // border-bottom: 1px solid rgba(color(pr),0.1);
   width: 100%;
   nav {
     z-index: 0;
@@ -86,7 +97,9 @@ p {
           color: #fff;
         }
         a:hover {
-          color: #3c096c;
+          // color: #3c096c;
+          color: #7b2cbf;
+          // text-shadow: 1px 1px 6px 3px #fff;
         }
       }
     }
@@ -103,7 +116,8 @@ p {
   left: -50%;
   width: 20%;
   height: 20%;
-  background-color: #7b2cbf;
+  // background-color: #7b2cbf;
+  background-color:color(pr);
   // background-color: #3c096c;
   border-radius: 50%;
   transition: all 0.3s;
@@ -175,7 +189,7 @@ header {
 .about-section {
   width: 100%;
   min-height: 40vh;
-  background-color: #fff;
+  // background-color: #fff;
   position: relative;
   z-index: -5;
   display: flex;
@@ -212,7 +226,7 @@ header {
 .vision-section {
   width: 100%;
   min-height: 40vh;
-  background-color: #fff;
+  // background-color: #fff;
   position: relative;
   z-index: -5;
   display: flex;
@@ -356,7 +370,7 @@ footer {
   width: 100%;
   height: 100vh;
   // background-color: rgba(60,9,108,0.8);
-  background-color: rgba(0,0,0, 0.9);
+  background-color: rgba(color(bg),1);
 }
 
 #wave1 {
@@ -375,7 +389,7 @@ footer {
 #wave1:after {
   content: "";
   /* border: 2px solid #008744; */
-  border: 2px solid #ddd;
+  border: 2px solid color(pr);
   border-radius: 50%;
   width: 100px;
   height: 100px;

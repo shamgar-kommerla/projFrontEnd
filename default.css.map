@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAQA;;;;;;;kBAOkB",
+    "mappings": "AAQA;;;;;;;kBAOkB;AAMlB;;;;;;4CAM4C",
     "sources": [
         "default.scss"
     ],
