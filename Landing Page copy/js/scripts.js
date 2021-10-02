@@ -20,20 +20,9 @@
 //         setTimeout(() => {
 //             navBg.classList.remove('nav-bg-change')
 //         },300);
-        
 //     }
     
 // })
-
-
-// document.body.style.position = 'fixed';
-// const prel =document.getElementById('preloader');
-// window.addEventListener('load',() => {
-//     setTimeout(()=> {
-//         prel.parentElement.removeChild(prel.parentElement.children[0]);
-//         document.body.style.position = '';
-//     },2000);
-// });
 
 
 
@@ -44,7 +33,7 @@ window.addEventListener('load',() => {
     setTimeout(()=> {
         prel.parentElement.removeChild(prel.parentElement.children[0]);
         document.body.style.position = '';
-    },2000);
+    },1000);
 });
 
 
@@ -67,5 +56,17 @@ let toggler = document.getElementById('hm');
       }else{
         list[0].classList.remove('list-change')
       }
-    })
- 
+
+
+      if(toggler.children[0].classList.length<=1){
+            toggler.children[0].classList.add('bar1-change');
+            toggler.children[1].classList.add('bar2-change');
+            toggler.children[2].classList.add('bar3-change');
+        }else{
+            toggler.children[0].classList.remove('bar1-change');
+            toggler.children[1].classList.remove('bar2-change');
+            toggler.children[2].classList.remove('bar3-change');
+            
+        }
+
+    });
