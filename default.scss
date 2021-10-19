@@ -26,3 +26,9 @@ font-family: 'Oswald', sans-serif;   // special paragrap headings
 font-family: 'Poppins', sans-serif;  // default
 font-family: 'Yaldevi', sans-serif;  // special paragraphs
 *******************************************/
+
+::selection {
+  color: #fff;
+  // background-color: #3F007A;
+  background-color: #35008b;
+}

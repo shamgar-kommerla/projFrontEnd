@@ -13,4 +13,12 @@ font-family: 'Oswald', sans-serif;   // special paragrap headings
 font-family: 'Poppins', sans-serif;  // default
 font-family: 'Yaldevi', sans-serif;  // special paragraphs
 *******************************************/
+::-moz-selection {
+  color: #fff;
+  background-color: #35008b;
+}
+::selection {
+  color: #fff;
+  background-color: #35008b;
+}
 /*# sourceMappingURL=default.css.map */

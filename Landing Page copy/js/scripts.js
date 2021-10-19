@@ -1,32 +1,3 @@
-// const hamb = document.getElementById('hamburger');
-// const navBg = document.getElementById('nav-bg');
-// const navList = document.getElementById('nav-list');
-// // console.log(hamb.children);
-// hamb.addEventListener('click', ()=> {
-//     // console.log('clicked');
-//     if(hamb.children[0].classList.length<=1){
-//         hamb.children[0].classList.add('bar1-change');
-//         hamb.children[1].classList.add('bar2-change');
-//         hamb.children[2].classList.add('bar3-change');
-//         navBg.classList.add('nav-bg-change');
-//         setTimeout(()=>{
-//             navList.classList.add('nav-list-change');
-//         },300)
-//     }else{
-//         hamb.children[0].classList.remove('bar1-change');
-//         hamb.children[1].classList.remove('bar2-change');
-//         hamb.children[2].classList.remove('bar3-change');
-//         navList.classList.remove('nav-list-change');
-//         setTimeout(() => {
-//             navBg.classList.remove('nav-bg-change')
-//         },300);
-//     }
-    
-// })
-
-
-
-
 document.body.style.position = 'fixed';
 const prel =document.getElementById('preloader');
 window.addEventListener('load',() => {
@@ -37,12 +8,11 @@ window.addEventListener('load',() => {
 });
 
 
-
 let toggler = document.getElementById('hm');
     let bgc = document.getElementsByClassName('bg');
     let list = document.getElementsByClassName('list');
     // console.log(list[0].classList.length);
-    console.log(toggler.children);
+    // console.log(toggler.children);
     toggler.addEventListener('click', () =>{
       if(bgc[0].classList.length <= 1){
         bgc[0].classList.add('bg-change');
@@ -66,7 +36,34 @@ let toggler = document.getElementById('hm');
             toggler.children[0].classList.remove('bar1-change');
             toggler.children[1].classList.remove('bar2-change');
             toggler.children[2].classList.remove('bar3-change');
-            
         }
 
     });
+
+
+
+    let navSelect = document.querySelector('nav');
+    let barSelect = document.querySelector('#hm');
+    console.log(barSelect.children);
+    
+    let scrollChange = () => {
+      var headSec = document.querySelector('header');
+      // console.log(headSec);
+      document.addEventListener('scroll', () => {
+        var headPos = headSec.getBoundingClientRect().top;
+        // console.log(headPos);
+        if(headPos <= -650 ){
+          navSelect.classList.add('n-change');
+          for(let i=0;i<3;i++){
+            barSelect.children[i].style.backgroundColor= '#3f007a';
+          }
+        }else{
+          navSelect.classList.remove('n-change');
+          for(let i=0;i<3;i++){
+            barSelect.children[i].style.backgroundColor= '#fff';
+          }
+        }
+      });
+    }
+
+    scrollChange();
