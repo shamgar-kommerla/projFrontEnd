@@ -234,7 +234,7 @@ nav #hm {
       color: #555;
     }
   }
-}
+} 
 .list-change {
   color: #fff;
   opacity: 1;
@@ -260,6 +260,7 @@ header {
       color: #fff;
       font-size: 48px;
       letter-spacing: 2px;
+      color: #ee7a0f;
     }
     p {
       color: #fff;
@@ -308,11 +309,12 @@ header {
   z-index: -5;
   display: flex;
   width: 80%;
-  margin: 2rem auto;
+  margin: 5rem auto;
   flex-wrap: wrap;
   .image-section {
     flex: 0.5;
     img {
+      border-radius: 8px;
       max-width: 100%;
       height: 100%;
       object-fit: cover;
@@ -322,17 +324,30 @@ header {
     flex: 0.5;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 4rem;
+    justify-content: flex-start;
+    padding: 0rem 3rem;
     h1 {
       color: #3c096c;
       font-size: 40px;
       margin-bottom: 1.5rem;
-      font-family: "Yaldevi", sans-serif;
+      // font-family: "Yaldevi", sans-serif;
     }
     p {
-      font-family: "Yaldevi", sans-serif;
+      // font-family: "Yaldevi", sans-serif;
       font-size: 18px;
+      margin-bottom: 1.5rem;
+    }
+
+    .buttons{
+      a{
+        text-decoration: none;
+        background-color: color(pr);
+        color: #fff;
+        padding: 0.5rem 2rem;
+      }
+      a:hover {
+        background-color: #460a7e;
+      }
     }
   }
 }
@@ -345,7 +360,7 @@ header {
   z-index: -5;
   display: flex;
   width: 80%;
-  margin: 2rem auto;
+  margin: 5rem auto;
   flex-wrap: wrap;
   justify-content: space-evenly;
 
@@ -354,6 +369,7 @@ header {
     z-index: 6;
     flex: 0.3;
     img {
+      border-radius: 8px;
       max-width: 100%;
       height: 100%;
       object-fit: cover;
@@ -370,10 +386,10 @@ header {
       color: #3c096c;
       font-size: 40px;
       margin-bottom: 1.5rem;
-      font-family: "Yaldevi", sans-serif;
+      // font-family: "Yaldevi", sans-serif;
     }
     p {
-      font-family: "Yaldevi", sans-serif;
+      // font-family: "Yaldevi", sans-serif;
       font-size: 18px;
     }
   }

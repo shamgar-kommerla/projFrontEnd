@@ -115,7 +115,7 @@ body {
 .user-details {
   width: 80%;
   height: 40vh;
-  margin: 2rem auto;
+  margin: 5rem auto;
   background-color: #fff;
   -webkit-box-shadow: 0.5px 0.5px 5px 0.1px rgba(63, 0, 122, 0.5);
           box-shadow: 0.5px 0.5px 5px 0.1px rgba(63, 0, 122, 0.5);
@@ -212,7 +212,7 @@ body {
 
 .articles-section {
   width: 80%;
-  margin: 2rem auto;
+  margin: 5rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

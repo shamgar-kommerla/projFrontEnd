@@ -167,13 +167,14 @@ p {
 
 .article-section .page .main-heading {
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   font-size: 28px;
 }
 
 .article-section .page .article-image {
   width: 80%;
   height: 400px;
-  margin: 1rem auto;
+  margin: 1rem auto 2rem auto;
 }
 
 .article-section .page .article-image img {
@@ -216,55 +217,6 @@ p {
   font-family: "Cookie", cursive;
 }
 
-@media screen and (max-width: 500px) {
-  .navbar nav .logo-section img {
-    width: 200px;
-  }
-  .navbar nav #nav-list {
-    position: absolute;
-    z-index: 1 !important;
-    top: 250%;
-    left: 15%;
-    opacity: 0;
-    -webkit-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-  }
-  .article-section {
-    position: relative;
-    z-index: -4;
-    min-height: 40vh;
-    width: 100%;
-  }
-  .article-section .page {
-    background-color: #fff;
-    width: 90%;
-    margin: 2rem auto;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    line-height: 1.25;
-  }
-  .article-section .page .article-image {
-    width: 80%;
-    height: 200px;
-    margin: 1rem auto;
-  }
-  .article-section .page .article-image img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .article-section .page .sub-heading {
-    width: 80%;
-    margin: auto;
-  }
-  .article-section .page .paragraph {
-    text-indent: 50px;
-    width: 80%;
-    margin: auto;
-  }
-}
-
 footer {
   background-color: #ddd;
   min-height: 10vh;
@@ -294,8 +246,9 @@ footer p {
   #section-to-print {
     background-color: #fff;
     width: 100%;
-    padding-top: 0rem;
+    padding: 0rem !important;
     line-height: 1.25;
+    margin: 0rem auto !important;
   }
   #section-to-print .main-heading {
     font-family: "Montserrat", sans-serif;
@@ -498,6 +451,49 @@ footer p {
   }
   .articles-section .section-body .quotes-section {
     display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .article-section {
+    position: relative;
+    z-index: -4;
+    min-height: 40vh;
+    width: 100%;
+  }
+  .article-section .page .main-heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .article-section .page .article-image {
+    width: 90%;
+    height: 250px;
+    margin: 1rem auto;
+  }
+  .article-section .page .article-image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 8px;
+  }
+  .article-section .page .sub-heading {
+    width: 90%;
+    margin: auto;
+  }
+  .article-section .page .paragraph {
+    text-indent: 50px;
+    width: 90%;
+    margin: auto;
+  }
+  .article-section .page .quotation {
+    min-height: 50px;
+  }
+  .article-section .page .quotation p {
+    color: #000;
+    font-size: 24px;
+    font-family: "Cookie", cursive;
   }
 }
 

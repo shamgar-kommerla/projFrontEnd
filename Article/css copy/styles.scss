@@ -133,12 +133,13 @@ p {
     line-height: 1.25;
     .main-heading {
       font-family: "Montserrat", sans-serif;
+      font-weight: 500;
       font-size: 28px;
     }
     .article-image {
       width: 80%;
       height: 400px;
-      margin: 1rem auto;
+      margin: 1rem auto 2rem auto;
       img {
         width: 100%;
         height: 100%;
@@ -173,62 +174,6 @@ p {
   }
 }
 
-@media screen and(max-width: 500px) {
-  .navbar {
-    nav {
-      .logo-section {
-        img {
-          width: 200px;
-        }
-      }
-      #nav-list {
-        position: absolute;
-        // color: #fff;
-        z-index: 1 !important;
-        top: 250%;
-        left: 15%;
-        // background-color: #fff;
-        opacity: 0;
-        transition: all 0.3s ease-in;
-        // transition-delay: 0.3s;
-      }
-    }
-  }
-
-  .article-section {
-    position: relative;
-    z-index: -4;
-    min-height: 40vh;
-    width: 100%;
-    .page {
-      background-color: #fff;
-      width: 90%;
-      margin: 2rem auto;
-      padding-top: 3rem;
-      padding-bottom: 3rem;
-      line-height: 1.25;
-      .article-image {
-        width: 80%;
-        height: 200px;
-        margin: 1rem auto;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-      .sub-heading {
-        width: 80%;
-        margin: auto;
-      }
-      .paragraph {
-        text-indent: 50px;
-        width: 80%;
-        margin: auto;
-      }
-    }
-  }
-}
 
 footer {
   // background-color: #3f007a;
@@ -254,8 +199,9 @@ footer {
   #section-to-print {
     background-color: #fff;
     width: 100%;
-    padding-top: 0rem;
+    padding: 0rem !important;
     line-height: 1.25;
+    margin: 0rem auto !important;
     .main-heading {
       font-family: "Montserrat", sans-serif;
       font-size: 28px;
@@ -435,6 +381,49 @@ footer {
   }
 }
 
+@media screen and(max-width: 800px) {
+  .article-section {
+    position: relative;
+    z-index: -4;
+    min-height: 40vh;
+    width: 100%;
+    .page {
+      .main-heading {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+      }
+      .article-image {
+        width: 90%;
+        height: 250px;
+        margin: 1rem auto;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 8px;
+        }
+      }
+      .sub-heading {
+        width: 90%;
+        margin: auto;
+      }
+      .paragraph {
+        text-indent: 50px;
+        width: 90%;
+        margin: auto;
+      }
+      .quotation {
+        min-height: 50px;
+        p {
+          color: #000;
+          font-size: 24px;
+          font-family: "Cookie", cursive;
+        }
+      }
+    }
+  }
+}
 
 
 

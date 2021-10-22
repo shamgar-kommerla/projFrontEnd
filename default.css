@@ -13,6 +13,7 @@ font-family: 'Oswald', sans-serif;   // special paragrap headings
 font-family: 'Poppins', sans-serif;  // default
 font-family: 'Yaldevi', sans-serif;  // special paragraphs
 *******************************************/
+@import url("https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&family=Bonheur+Royale&family=WindSong:wght@400;500&display=swap");
 ::-moz-selection {
   color: #fff;
   background-color: #35008b;

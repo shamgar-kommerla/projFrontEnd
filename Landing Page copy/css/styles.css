@@ -178,6 +178,7 @@ header .header-content h1 {
   color: #fff;
   font-size: 48px;
   letter-spacing: 2px;
+  color: #ee7a0f;
 }
 
 header .header-content p {
@@ -234,7 +235,7 @@ header .header-overlay {
   display: -ms-flexbox;
   display: flex;
   width: 80%;
-  margin: 2rem auto;
+  margin: 5rem auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -246,6 +247,7 @@ header .header-overlay {
 }
 
 .about-section .image-section img {
+  border-radius: 8px;
   max-width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -263,22 +265,32 @@ header .header-overlay {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 4rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0rem 3rem;
 }
 
 .about-section .desctiption-section h1 {
   color: #3c096c;
   font-size: 40px;
   margin-bottom: 1.5rem;
-  font-family: "Yaldevi", sans-serif;
 }
 
 .about-section .desctiption-section p {
-  font-family: "Yaldevi", sans-serif;
   font-size: 18px;
+  margin-bottom: 1.5rem;
+}
+
+.about-section .desctiption-section .buttons a {
+  text-decoration: none;
+  background-color: #3f007a;
+  color: #fff;
+  padding: 0.5rem 2rem;
+}
+
+.about-section .desctiption-section .buttons a:hover {
+  background-color: #460a7e;
 }
 
 .vision-section {
@@ -290,7 +302,7 @@ header .header-overlay {
   display: -ms-flexbox;
   display: flex;
   width: 80%;
-  margin: 2rem auto;
+  margin: 5rem auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
@@ -307,6 +319,7 @@ header .header-overlay {
 }
 
 .vision-section .image-section img {
+  border-radius: 8px;
   max-width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -335,11 +348,9 @@ header .header-overlay {
   color: #3c096c;
   font-size: 40px;
   margin-bottom: 1.5rem;
-  font-family: "Yaldevi", sans-serif;
 }
 
 .vision-section .desctiption-section p {
-  font-family: "Yaldevi", sans-serif;
   font-size: 18px;
 }
 
