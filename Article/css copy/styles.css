@@ -444,43 +444,34 @@ footer p {
     opacity: 1 !important;
     left: 0 !important;
   }
-  .articles-section .section-body .article-cards-section {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-  .articles-section .section-body .quotes-section {
-    display: none;
+  .article-section .page {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 800px) {
+  .navbar nav #nav-list {
+    width: 70%;
+    margin: auto;
+  }
   .article-section {
-    position: relative;
-    z-index: -4;
-    min-height: 40vh;
+    width: 100%;
+  }
+  .article-section .page {
     width: 100%;
   }
   .article-section .page .main-heading {
-    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 18px;
   }
   .article-section .page .article-image {
     width: 90%;
     height: 250px;
-    margin: 1rem auto;
-  }
-  .article-section .page .article-image img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 8px;
+    margin: 0.7rem auto;
   }
   .article-section .page .sub-heading {
     width: 90%;
-    margin: auto;
+    margin: 0 auto 0.5rem auto;
   }
   .article-section .page .paragraph {
     text-indent: 50px;

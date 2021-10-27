@@ -1,4 +1,3 @@
-
 $colors: (
   pr: #3f007a,
   bg: #eee,
@@ -174,7 +173,6 @@ p {
   }
 }
 
-
 footer {
   // background-color: #3f007a;
   background-color: #ddd;
@@ -182,10 +180,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  p{
+  p {
     color: color(pr);
   }
-  
 }
 
 @media print {
@@ -243,7 +240,6 @@ footer {
     }
   }
 }
-
 
 @media screen and (max-width: 1250px) {
   .navbar {
@@ -311,7 +307,7 @@ footer {
         flex-direction: column;
         // background-color: #7b2cbf;
         background-color: #fff;
-        box-shadow: 0px 0px 5px 0px rgba(color(pr),0.5);
+        box-shadow: 0px 0px 5px 0px rgba(color(pr), 0.5);
         transition: all 0.5s;
         .for-small {
           display: block;
@@ -369,44 +365,49 @@ footer {
     }
   }
 
-  .articles-section {
-    .section-body {
-      .article-cards-section {
-        flex: 1;
-      }
-      .quotes-section {
-        display: none;
-      }
+  .article-section {
+    .page{
+      width: 100%;
     }
   }
 }
 
 @media screen and(max-width: 800px) {
+  .navbar {
+    nav{
+      #nav-list {
+        width: 70%;
+        margin: auto;
+      }
+    }
+   
+  }
   .article-section {
-    position: relative;
-    z-index: -4;
-    min-height: 40vh;
+    // position: relative;
+    // z-index: -4;
+    // min-height: 40vh;
     width: 100%;
     .page {
+      width: 100%;
       .main-heading {
-        font-family: "Montserrat", sans-serif;
+        // font-family: "Montserrat", sans-serif;
         font-weight: 400;
         font-size: 18px;
       }
       .article-image {
         width: 90%;
         height: 250px;
-        margin: 1rem auto;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          border-radius: 8px;
-        }
+        margin: 0.7rem auto;
+        // img {
+        //   width: 100%;
+        //   height: 100%;
+        //   object-fit: cover;
+        //   // border-radius: 8px;
+        // }
       }
       .sub-heading {
         width: 90%;
-        margin: auto;
+        margin:0 auto 0.5rem auto;
       }
       .paragraph {
         text-indent: 50px;
@@ -425,6 +426,4 @@ footer {
   }
 }
 
-
-
-@import './preloader';
+@import "./preloader";
