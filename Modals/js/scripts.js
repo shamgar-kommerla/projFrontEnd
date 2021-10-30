@@ -1,7 +1,7 @@
 let sign = document.getElementById('signUpModal');
 let modalContainer = document.getElementsByClassName('modal-container-1');
 let closeBtn = document.getElementById('modal-close-btn');
-console.log(closeBtn);
+console.log(closeBtn); 
 // console.log(modalContainer[0]);
     
 sign.addEventListener('click', ()=> {

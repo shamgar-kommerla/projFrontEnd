@@ -374,6 +374,200 @@ footer p {
   color: #3f007a;
 }
 
+.modal-container-1 {
+  position: absolute;
+  z-index: -5;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-container-1 .modal {
+  position: relative;
+  background-color: #fff;
+  width: 40%;
+  margin: auto;
+  height: 60vh;
+  top: -100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.modal-container-1 .modal .modal-head {
+  height: 15%;
+  background-color: #f3f3;
+  background-color: #3f007a;
+}
+
+.modal-container-1 .modal .modal-head .head-btns {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-container-1 .modal .modal-head .head-btns h3 {
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.modal-container-1 .modal .modal-head #modal-close-btn {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+}
+
+.modal-container-1 .modal .modal-body {
+  background-color: #fff;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-container-1 .modal .modal-body form {
+  background-color: #fff;
+  width: 80%;
+  margin: auto;
+}
+
+.modal-container-1 .modal .modal-body form fieldset {
+  padding: 1rem 3rem;
+}
+
+.modal-container-1 .modal .modal-body form div {
+  margin-bottom: 1rem;
+}
+
+.modal-container-1 .modal .modal-body .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  position: relative;
+  padding-top: 1.5rem;
+}
+
+.modal-container-1 .modal .modal-body .input + .input {
+  margin-top: 1.5rem;
+}
+
+.modal-container-1 .modal .modal-body .input-label,
+.modal-container-1 .modal .modal-body .input-label-text-area {
+  color: #8597a3;
+  position: absolute;
+  top: 1.5rem;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+}
+
+.modal-container-1 .modal .modal-body .input-field {
+  border: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid #eee;
+  font: inherit;
+  font-size: 1.125rem;
+  padding: 0.25rem 0;
+}
+
+.modal-container-1 .modal .modal-body .input-field:focus, .modal-container-1 .modal .modal-body .input-field:valid {
+  outline: 0;
+  border-bottom-color: #001219;
+  border-bottom-color: #3f007a;
+}
+
+.modal-container-1 .modal .modal-body .input-field:focus + .input-label, .modal-container-1 .modal .modal-body .input-field:valid + .input-label {
+  color: #001219;
+  color: #3f007a;
+  -webkit-transform: translateY(-1.5rem);
+          transform: translateY(-1.5rem);
+}
+
+.modal-container-1 .modal .modal-body .input-field:focus + .input-label-text-area, .modal-container-1 .modal .modal-body .input-field:valid + .input-label-text-area {
+  color: #001219;
+  color: #3f007a;
+  -webkit-transform: translateY(-1.5rem);
+          transform: translateY(-1.5rem);
+}
+
+.modal-container-1 .modal .modal-foot {
+  height: 15%;
+  background-color: #f3f3;
+  background-color: #3f007a;
+}
+
+.modal-container-1 .modal .modal-foot .foot-btns {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-container-1 .modal .modal-foot .foot-btns a {
+  text-decoration: none;
+  color: #fff;
+  margin: 1rem;
+  padding: 0.4rem 1rem;
+  background-color: green;
+}
+
+.modal-container-1 .modal .modal-foot .foot-btns #modal-close-btn {
+  background-color: red;
+}
+
+.modal-container-1 .modal-transition {
+  top: -30%;
+}
+
+@media screen and (max-width: 1000px) {
+  .modal-container-1 .modal {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .modal-container-1 .modal {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .about-section {
     display: -webkit-box;
