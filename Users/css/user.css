@@ -114,7 +114,7 @@ body {
 
 .user-details {
   width: 80%;
-  height: 40vh;
+  min-height: 40vh;
   margin: 5rem auto;
   background-color: #fff;
   -webkit-box-shadow: 0.5px 0.5px 5px 0.1px rgba(63, 0, 122, 0.5);
@@ -125,6 +125,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .user-details .user-image {
@@ -133,7 +135,12 @@ body {
           flex: 0.3;
 }
 
-.user-details .user-image img {
+.user-details .user-image .user-img-cont {
+  width: 100%;
+  height: 100%;
+}
+
+.user-details .user-image .user-img-cont img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -632,6 +639,138 @@ footer {
   }
   .articles-section .section-body .quotes-section {
     display: none;
+  }
+  .user-details {
+    min-height: 40vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+  }
+  .user-details .user-image {
+    -webkit-box-flex: 0.3;
+        -ms-flex: 0.3;
+            flex: 0.3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+  }
+  .user-details .user-image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .user-details .user-desctiption {
+    -webkit-box-flex: 0.6;
+        -ms-flex: 0.6;
+            flex: 0.6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-top: 2rem;
+  }
+  .user-details .user-desctiption div {
+    margin-bottom: 0.5rem;
+  }
+  .user-details .user-desctiption div p span {
+    font-weight: 500;
+  }
+  .user-details .user-desctiption .buttons a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #3f007a;
+    padding: 0.4rem 2rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .user-details {
+    width: 90%;
+  }
+  .articles-section {
+    width: 90%;
+  }
+  .articles-section .section-body .article-cards-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .articles-section .section-body .article-cards-section .article-card {
+    width: 45%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .articles-section .section-body .article-cards-section .article-card .article-content {
+    padding: 0;
+  }
+  .articles-section .section-body .article-cards-section .article-card .article-content .article-name h2 {
+    font-size: 14px;
+  }
+  .articles-section .section-body .article-cards-section .article-card .article-content .article-desctiption {
+    display: none;
+  }
+  .articles-section .section-body .article-cards-section .article-card .article-content .article-publisher {
+    font-size: 13px;
+  }
+  .articles-section .section-body .article-cards-section .article-card .article-content .published-date {
+    font-size: 12px;
+  }
+  .articles-section .section-body .quotes-section {
+    display: none;
+  }
+  .user-details .user-desctiption {
+    -webkit-box-flex: 0.6;
+        -ms-flex: 0.6;
+            flex: 0.6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-top: 2rem;
+  }
+  .user-details .user-desctiption div {
+    margin-bottom: 0.5rem;
+  }
+  .user-details .user-desctiption div p {
+    font-size: 13px;
+  }
+  .user-details .user-desctiption .buttons a {
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=user.css.map */
