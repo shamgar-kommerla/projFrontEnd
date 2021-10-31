@@ -135,12 +135,7 @@ body {
           flex: 0.3;
 }
 
-.user-details .user-image .user-img-cont {
-  width: 100%;
-  height: 100%;
-}
-
-.user-details .user-image .user-img-cont img {
+.user-details .user-image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
