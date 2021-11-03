@@ -1,14 +1,16 @@
+document.getElementById('vbg').play();
 document.body.style.position = 'fixed';
 const prel =document.getElementById('preloader');
+
 window.addEventListener('load',() => {
-    setTimeout(()=> {
+    setTimeout(()=> { 
         prel.parentElement.removeChild(prel.parentElement.children[0]);
         document.body.style.position = '';
     },1000);
 });
 
-
-let toggler = document.getElementById('hm');
+    
+    let toggler = document.getElementById('hm');
     let bgc = document.getElementsByClassName('bg');
     let list = document.getElementsByClassName('list');
     // console.log(list[0].classList.length);
