@@ -436,7 +436,7 @@ footer p {
 
 .modal-container-1 .modal .modal-body {
   background-color: #fff;
-  height: 70%;
+  height: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -521,6 +521,43 @@ footer p {
           transform: translateY(-1.5rem);
 }
 
+.modal-container-1 .modal .modal-body .foot-btns {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0;
+}
+
+.modal-container-1 .modal .modal-body .foot-btns a {
+  border-style: unset;
+  text-decoration: none;
+  color: #fff;
+  margin: 1rem;
+  padding: 0.4rem 1rem;
+  background-color: green;
+}
+
+.modal-container-1 .modal .modal-body .foot-btns .login-btn {
+  cursor: pointer;
+  border-style: unset;
+  text-decoration: none;
+  color: #fff;
+  margin: 1rem;
+  padding: 0.45rem 1.1rem;
+  background-color: green;
+}
+
+.modal-container-1 .modal .modal-body .foot-btns #modal-close-btn {
+  background-color: red;
+}
+
 .modal-container-1 .modal .modal-foot {
   height: 15%;
   background-color: #f3f3;
@@ -566,6 +603,13 @@ footer p {
 @media screen and (max-width: 550px) {
   .modal-container-1 .modal {
     width: 80%;
+  }
+  .modal-container-1 .modal .modal-body {
+    width: 100%;
+  }
+  .modal-container-1 .modal .modal-body form {
+    width: 95%;
+    font-size: 14px !important;
   }
 }
 
